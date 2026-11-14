@@ -5,6 +5,7 @@ const rateLimit = require("express-rate-limit");
 const authRoutes = require("./routes/auth");
 const vibeRoutes = require("./routes/vibes");
 const moderationRoutes = require("./routes/moderation");
+const docsRoutes = require("./routes/docs");
 const { errorHandler } = require("./middleware/errorHandler");
 
 const app = express();
@@ -22,6 +23,7 @@ app.use(limiter);
 
 app.get("/health", (_req, res) => res.json({ status: "ok" }));
 
+app.use(docsRoutes);
 app.use("/auth", authRoutes);
 app.use("/vibes", vibeRoutes);
 app.use("/", moderationRoutes);
