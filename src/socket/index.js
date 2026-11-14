@@ -1,8 +1,8 @@
 const { Server } = require("socket.io");
 const jwt = require("jsonwebtoken");
-const User = require("../models/User");
-const Vibe = require("../models/Vibe");
-const Message = require("../models/Message");
+const User = require("../models/user");
+const Vibe = require("../models/vibe");
+const Message = require("../models/message");
 
 let io;
 

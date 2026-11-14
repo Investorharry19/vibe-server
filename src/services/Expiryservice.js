@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Vibe = require("../models/Vibe");
+const Vibe = require("../models/vibe");
 const { getIO } = require("../socket");
 
 let pollInterval;

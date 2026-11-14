@@ -1,4 +1,4 @@
-const Vibe = require("../models/Vibe");
+const Vibe = require("../models/vibe");
 const { getIO } = require("../socket");
 
 async function sendJoinRequest(vibeId, userId) {

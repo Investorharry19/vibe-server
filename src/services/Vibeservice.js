@@ -1,4 +1,4 @@
-const Vibe = require("../models/Vibe");
+const Vibe = require("../models/vibe");
 const { getIO } = require("../socket");
 
 const DEFAULT_RADIUS_KM = 5;
