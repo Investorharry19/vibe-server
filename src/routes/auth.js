@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { body, validationResult } = require("express-validator");
-const { googleAuth } = require("../services/authservice");
+const { googleAuth } = require("../services/authService");
 const { authenticate } = require("../middleware/auth");
 
 const validate = (req, res, next) => {
