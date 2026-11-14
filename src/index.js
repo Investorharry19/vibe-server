@@ -3,7 +3,7 @@ const http = require("http");
 const app = require("./app");
 const { connectDB } = require("./config/database");
 const { initSocket } = require("./socket");
-const { startExpiryWatcher } = require("./services/expiryservice");
+const { startExpiryWatcher } = require("./services/expiryService");
 
 const PORT = process.env.PORT || 5000;
 

@@ -27,8 +27,8 @@ function makeVibe(overrides = {}) {
   };
 }
 
-jest.mock("../src/models/Vibe");
-const Vibe = require("../src/models/Vibe");
+jest.mock("../src/models/vibe");
+const Vibe = require("../src/models/vibe");
 
 const {
   sendJoinRequest,
